@@ -1,5 +1,24 @@
 <script>
+  import { webVitals } from '../vitals';
+  import { page } from '$app/stores';
+  import { inject } from '@vercel/analytics';
+
+  // Load the stylesheet
   import '../app.css';
+
+  // Inject vercel analytics
+  inject();
+
+  // More vercel analytics
+  let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
+
+  $: if (analyticsId) {
+    webVitals({
+      path: $page.url.pathname,
+      params: $page.params,
+      analyticsId
+    })
+  }
 
  function copyLink() {
    navigator.clipboard.writeText('earthbuild.de');

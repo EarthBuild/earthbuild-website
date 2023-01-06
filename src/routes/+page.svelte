@@ -1,7 +1,11 @@
 <script>
   import '../app.css';
 
-  const isMobile = window.matchMedia('(max-width: 600px)').matches;
+  function isMobileDevice() {
+  return (window.innerWidth <= 600 && window.innerHeight <= 800);
+};
+
+ var isMobile = isMobileDevice();
 
  function copyLink() {
    navigator.clipboard.writeText('earthbuild.de');

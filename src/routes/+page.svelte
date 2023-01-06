@@ -1,5 +1,6 @@
 <script>
 	import { webVitals } from '../vitals';
+ import { browser } from '$app/environment'
 	import { page } from '$app/stores';
 	import { inject } from '@vercel/analytics';
 
@@ -12,7 +13,7 @@
 	// More vercel analytics
 	let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
 
-	$: if (analyticsId) {
+	$: if (browser && analyticsId) {
 		webVitals({
 			path: $page.url.pathname,
 			params: $page.params,

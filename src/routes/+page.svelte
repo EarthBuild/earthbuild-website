@@ -37,11 +37,20 @@
 		</a>
 	</div>
 	<a href="https://discord.gg/fmxNNE3xnH">
+		{#if !isMobile}
 		<div class="card_right">
 			<div style="font-size: 24px;font-weight:700;left:7%;position:relative;">DISCORD</div>
 			<div style="font-size: 14px;font-weight:700;color:blue;position:absolute;top:63%;left:7%;">
 				Klicke zum joinen
 			</div>
 		</div>
+		{:else}
+		<div class="card_right" style="top: 45%; right: 12%;">
+			<div style="font-size: 24px;font-weight:700;left:7%;position:relative;">DISCORD</div>
+			<div style="font-size: 14px;font-weight:700;color:blue;position:absolute;top:63%;left:7%;">
+				Klicke zum joinen
+			</div>
+		</div>
+		{/if}
 	</a>
 </div>

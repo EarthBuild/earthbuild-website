@@ -16,7 +16,7 @@
 	</div>
 	<div class="logo">
 		<a href="https://earthbuild.de/">
-			<img alt="Earthbuild Logo" src="/favicon.png" />
+			<img alt="Earthbuild Logo" src="/logo.webp" />
 		</a>
 	</div>
 	<a href="https://discord.gg/fmxNNE3xnH">

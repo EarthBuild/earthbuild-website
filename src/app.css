@@ -1,5 +1,5 @@
 html {
-	background-image: url('/background.png');
+	background-image: url('/background.webp');
 }
 
 body {
@@ -62,4 +62,9 @@ body {
 a {
 	text-decoration: none;
 	color: white;
+}
+
+img {
+	width: 100%; /* or max-width: 100%; */
+	height: auto;
 }

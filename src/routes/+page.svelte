@@ -1,6 +1,17 @@
 <script>
-	// Import the Mobile Detector
-	import { isMobile } from '$lib/isMobile.svelte';
+	import { browser } from '$app/environment';
+
+	// Detect if client is mobile
+	let isMobile = false;
+
+	if (browser) {
+		function detectMobile() {
+   const userAgent = navigator.userAgent;
+   isMobile = userAgent.match(/Android/i) || userAgent.match(/webOS/i) || userAgent.match(/iPhone/i) || userAgent.match(/iPad/i) || userAgent.match(/iPod/i) || userAgent.match(/BlackBerry/i) || userAgent.match(/Windows Phone/i);
+		}
+
+		detectMobile()
+	}
 
 	// Load the stylesheet
 	import '../app.css';

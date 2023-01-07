@@ -14,7 +14,7 @@ body {
 
 .logo {
 	transition: all 0.15s ease;
-	margin-top: -55px;
+	margin-top: -15%;
 }
 
 .logo:hover {

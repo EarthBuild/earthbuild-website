@@ -30,8 +30,8 @@ body {
 	background: rgba(53, 53, 53, 0.5);
 	border-radius: 10px;
 	position: absolute;
-	left: 90px;
-	top: 255px;
+	left: 6%;
+	top: 42%;
 	align-items: center;
 	display: flex;
 }
@@ -49,8 +49,8 @@ body {
 	background: rgba(53, 53, 53, 0.5);
 	border-radius: 10px;
 	position: absolute;
-	right: 90px;
-	top: 255px;
+	right: 6%;
+	top: 42%;
 	align-items: center;
 	display: flex;
 }

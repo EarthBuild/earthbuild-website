@@ -1,5 +1,5 @@
 <script>
-	import { webVitals } from '../vitals';
+	import { webVitals } from '$lib/vitals';
  import { browser } from '$app/environment'
 	import { page } from '$app/stores';
 	import { inject } from '@vercel/analytics';

@@ -1,6 +1,6 @@
 {
 	"name": "earthbuild-website",
-	"version": "1.0.0-beta",
+	"version": "1.0.1",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
